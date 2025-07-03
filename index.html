@@ -51,18 +51,18 @@
 <div id="input-form">
   <label>
     <strong>Name*</strong><br>
-    Please include your salutation.
-    <input type="text" id="name" placeholder="Mr. John Doe" oninput="generateSignature()" required>
+    Please include your salutation. BMC alumni may add their graduation year as '<i>&lt;Last two digits&gt;</i>.
+    <input type="text" id="name" placeholder="Mr. John Doe '54" oninput="generateSignature()" required>
   </label>
   <label>
     <strong>Title*</strong><br>
-    Faculty: Please use <i>&lt;Department&gt; Teacher</i> format. i.e.: Math Teacher, Social Studies Teacher.
+    Faculty: Please use <i>&lt;Department&gt; Teacher</i> format as it appears on the <a href="https://www.bishopmoore.org/about/directory.cfm" target="_blank">website directory</a>. i.e.: Math Teacher, Social Studies Teacher.
     <input type="text" id="title1" placeholder="English Teacher" oninput="generateSignature()" required>
   </label>
   <label>
     <strong>Secondary Title</strong><br>
     Coaches or club sponsors only.
-    <input type="text" id="title2" placeholder="Football Coach" oninput="generateSignature()">
+    <input type="text" id="title2" placeholder="Assistant Football Coach" oninput="generateSignature()">
   </label>
   <label>
     <strong>Phone Extension</strong>
@@ -105,11 +105,20 @@
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
         ctx.fillStyle = "#00000";
+
+        var nameHeight = 105;
+        var title1Height = 140;
+
+        if (title2 == '') {
+          nameHeight = 140;
+          title1Height = 172;
+        }
+
         ctx.font = "500 32px futura-pt";
-        ctx.fillText(name, 284, 105);
+        ctx.fillText(name, 284, nameHeight);
 
         ctx.font = "400 24px futura-pt";
-        ctx.fillText(title1, 284, 140);
+        ctx.fillText(title1, 284, title1Height);
         ctx.fillText(title2, 284, 172);
 
         ctx.font = "300 24px futura-pt";
