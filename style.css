@@ -17,7 +17,6 @@
       }
 
       input {
-        margin-right: auto;
         width: 100%;
       }
 
@@ -33,6 +32,14 @@
       label,
       input {
         font-size: 1.2em;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      .form-inline {
+        display: inline-block;
       }
 
       #email-domain {
