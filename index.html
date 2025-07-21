@@ -35,7 +35,7 @@
       <label>
         <p><strong>Email*</strong><br>
         Do not enter the domain (@bishopmoore.org). <div style="display: flex; align-items: center;"></p>
-          <input type="text" id="email" placeholder="Lastname, First Name Inital" pattern="^\w+$" oninput="generateSignature()" required style="flex: 1;">
+          <input type="text" id="email" placeholder="Lastname, First Name Inital" pattern="^[a-zA-Z0-9._%+-]+$" oninput="generateSignature()" required style="flex: 1;">
           <span id="email-domain">@bishopmoore.org</span>
         </div>
       </label>
