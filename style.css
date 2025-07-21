@@ -21,7 +21,8 @@
       }
 
       input:invalid {
-        border: 2px solid red;
+        border: 3px solid red;
+        background-color: rgba(255, 142, 142, 0.333);
       }
 
       label {
