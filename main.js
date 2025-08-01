@@ -69,7 +69,7 @@ function generateSignature() {
         // Phone and Email
         ctx.font = "300 24px futura-pt";
         if (phone != '') ctx.fillText(`, ext: ${phone}`, 440, 272);
-        ctx.fillText(`${email}@bishopmoore.org`, 284, 299);
+        ctx.fillText(`${email}`, 284, 299);
 
         // Convert canvas to image
         const dataURL = canvas.toDataURL("image/jpg");

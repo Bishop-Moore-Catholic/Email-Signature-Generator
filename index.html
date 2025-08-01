@@ -34,10 +34,7 @@
       </label>
       <label>
         <p><strong>Email*</strong><br>
-        Do not enter the domain (@bishopmoore.org). <div style="display: flex; align-items: center;"></p>
-          <input type="text" id="email" placeholder="Lastname, First Name Inital" pattern="^[a-zA-Z0-9._%+-]+$" oninput="generateSignature()" required style="flex: 1;">
-          <span id="email-domain">@bishopmoore.org</span>
-        </div>
+          <input type="email" id="email" placeholder="Lastname, First Name Inital@bishopmoore.org" pattern="^[a-zA-Z0-9\._%+\-]+(@bishopmoore\.org){1}$" oninput="generateSignature()" required>
       </label>
     </div>
     <div style="padding-top: 50px;">
@@ -79,8 +76,7 @@
     <h4>Step 4: Contact Info</h4>
     <ul>
         <li>If applicable, add your <strong>phone extension</strong>.</li>
-        <li>Enter your <strong>email</strong> username (do <strong>not</strong> include @bishopmoore.org).<br>
-            <em>Example:</em> if your email is jdoe@bishopmoore.org, just type <code>jdoe</code>.</li>
+        <li>Enter your <strong>email</strong> username.<br>
     </ul>
 
     <h4>Step 5: Preview and Download</h4>
